@@ -1,0 +1,200 @@
+Magic 271485
+Revision Verdi_T-2022.06-SP2-5
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1920 847 527 214
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/verif/SIM/mc_db.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 43819.463463
+cursor 100.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+userMarker 1500.013 M1 ID_GREEN5 long_dashed
+
+; show marker information
+; showMarkerValue [absolute|adjacent|relative|frequency]
+showMarkerValue relative
+showMarkerValue frequency
+
+; visible top row signal index
+top 57
+; marker line index
+markerPos 92
+
+; Run Time Signal and Member
+; userBusMem member ...
+; saveRunSig name
+activeDirFile "" "/home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/verif/SIM/mc_db.fsdb"
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[12]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[11]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[10]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[9]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[8]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[7]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[6]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[5]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[4]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[3]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[2]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[1]
+userBusMem /top/mc_mem_pif/mc_addr_pad_o[0]
+saveRunSig "/mc_Addr_to_mem_connection[12:0]"
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/verif/SIM/mc_db.fsdb"
+addSignal -h 15 /top/clk_i
+addSignal -h 15 -holdScope mc_clk_i
+addSignal -h 15 -holdScope rst
+addGroup "G2"
+addSignal -h 15 -UNSIGNED -HEX /top/wb_pif/poc_o[31:0]
+addSignal -h 15 -holdScope resume_req_i
+addSignal -h 15 -holdScope rst_i
+addSignal -h 15 -holdScope susp_req_i
+addSignal -h 15 -holdScope suspended_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb_addr_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb_data_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb_data_o[31:0]
+addSignal -h 15 -holdScope wb_err_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb_sel_i[3:0]
+addSignal -h 15 -holdScope wb_we_i
+addSignal -h 15 -holdScope clk_i
+addSignal -h 15 -holdScope wb_ack_o
+addSignal -h 15 -holdScope wb_cyc_i
+addSignal -h 15 -holdScope wb_stb_i
+addGroup "G3"
+addSignal -h 15 /top/mc_mem_pif/mc_ack_pad_i
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_addr_pad_o[23:0]
+addSignal -h 15 -holdScope mc_adsc_pad_o_
+addSignal -h 15 -holdScope mc_adv_pad_o_
+addSignal -h 15 -holdScope mc_bg_pad_o
+addSignal -h 15 -holdScope mc_br_pad_i
+addSignal -h 15 -holdScope mc_cas_pad_o_
+addSignal -h 15 -holdScope mc_cke_pad_o_
+addSignal -h 15 -holdScope mc_clk_i
+addSignal -h 15 -holdScope mc_coe_pad_coe_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_cs_pad_o_[7:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_data_pad_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_data_pad_o[31:0]
+addSignal -h 15 -holdScope mc_doe_pad_doe_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_dp_pad_i[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_dp_pad_o[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_dqm_pad_o[3:0]
+addSignal -h 15 -holdScope mc_oe_pad_o_
+addSignal -h 15 -holdScope mc_ras_pad_o_
+addSignal -h 15 -holdScope mc_rp_pad_o_
+addSignal -h 15 -holdScope mc_sts_pad_i
+addSignal -h 15 -holdScope mc_vpen_pad_o
+addSignal -h 15 -holdScope mc_we_pad_o_
+addSignal -h 15 -holdScope mc_zz_pad_o
+addGroup "G4"
+addGroup "MEMORY"
+addSignal -h 15 -UNSIGNED -HEX /top/mc_mem_pif/mc_addr_pad_o[23:0]
+addSubGroup "FLASH_MEM"
+addSignal -h 15 -UNSIGNED -HEX /top/mc_mem_pif/mc_addr_pad_o[23:0]
+addSignal -h 15 -UNSIGNED -HEX /top/mc_dq[31:0]
+addSubGroup "FLASH_CS0"
+addSignal -h 15 /top/mc_mem_pif/mc_doe_pad_doe_o
+addSignal -h 15 -UNSIGNED -HEX /top/mc_dq[31:0]
+addSignal -h 15 -UNSIGNED -HEX /top/mc_mem_pif/mc_addr_pad_o[23:0]
+addSignal -h 15 -UNSIGNED -HEX /mc_Addr_to_mem_connection[12:0]
+addSubGroup "FLASH_CS0_1"
+addSignal -expanded -h 15 -UNSIGNED -HEX /top/genblk1[0]/flash_mem_inst_0/Address[12:0]
+addSignal -h 15 -holdScope CE1n
+addSignal -h 15 -holdScope CE2
+addSignal -h 15 -holdScope OEn
+addSignal -h 15 -holdScope WEn
+addSignal -h 15 -UNSIGNED -HEX -holdScope dataIO[7:0]
+endSubGroup "FLASH_CS0_1"
+addSubGroup "FLASH_CS0_2"
+addSignal -h 15 -UNSIGNED -HEX /top/genblk1[0]/flash_mem_inst_1/Address[12:0]
+addSignal -h 15 -holdScope CE1n
+addSignal -h 15 -holdScope CE2
+addSignal -h 15 -holdScope OEn
+addSignal -h 15 -holdScope WEn
+addSignal -h 15 -UNSIGNED -HEX -holdScope dataIO[7:0]
+endSubGroup "FLASH_CS0_2"
+addSubGroup "FLASH_CS0_3"
+addSignal -h 15 -UNSIGNED -HEX /top/genblk1[0]/flash_mem_inst_2/Address[12:0]
+addSignal -h 15 -holdScope CE1n
+addSignal -h 15 -holdScope CE2
+addSignal -h 15 -holdScope OEn
+addSignal -h 15 -holdScope WEn
+addSignal -h 15 -UNSIGNED -HEX -holdScope dataIO[7:0]
+endSubGroup "FLASH_CS0_3"
+addSubGroup "FLASH_CS0_4"
+addSignal -h 15 -UNSIGNED -HEX /top/genblk1[0]/flash_mem_inst_3/Address[12:0]
+addSignal -h 15 -holdScope CE1n
+addSignal -h 15 -holdScope CE2
+addSignal -h 15 -holdScope OEn
+addSignal -h 15 -holdScope WEn
+addSignal -h 15 -UNSIGNED -HEX -holdScope dataIO[7:0]
+endSubGroup "FLASH_CS0_4"
+endSubGroup "FLASH_CS0"
+endSubGroup "FLASH_MEM"
+addGroup "G7"
+addSignal -h 15 /top/mc_top_dut/u7/fs
+addSignal -h 15 -holdScope suspended_o
+addSignal -h 15 -holdScope mc_rp
+addSignal -h 15 /top/mc_mem_pif/mc_rp_pad_o_
+addGroup "G8"
+addSignal -h 15 /top/mc_mem_pif/mc_rp_pad_o_
+addSignal -h 15 -holdScope mc_sts_pad_i
+addSignal -h 15 -holdScope mc_vpen_pad_o
+addGroup "G9"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/verif/SIM/mc_db.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/top"
+"/top/mc_mem_pif"
+
+SCOPE_LIST_BEGIN
+"/top/genblk1[0]"
+"/top/genblk1[0]/flash_mem_inst_0"
+"/top/genblk1[0]/flash_mem_inst_3"
+"/top"
+"/top/wb_pif"
+"/top/mc_mem_pif"
+"/top/mc_top_dut"
+"/top/genblk1[0]/flash_mem_inst_1"
+"/top/genblk1[0]/flash_mem_inst_2"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

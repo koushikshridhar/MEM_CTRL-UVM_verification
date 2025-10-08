@@ -1,0 +1,52 @@
+>> Log started at: 2025-09-27 19:32:23.813754 <<
+>> Python version: 3.6.8 (/usr/bin/python3) <<
+
+----------------------------------------------------------------------------
+DUT Name        : MC
+Num Interfaces  : 4
+
+Parsed Interface Configurations:
+[1] Name: WB, Mode: M, Speed: 200, Clk: clk_i, Rst: None, Rst Type: None
+[2] Name: MC_MEM, Mode: S, Speed: 100, Clk: mc_clk_i, Rst: None, Rst Type: None
+----------------------------------------------------------------------------
+Created: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/TOP
+Created: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/TEST_LIB
+Created: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/SEQ_LIB
+Created: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV
+Created: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/AGENTS
+Created: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/SBD
+Created: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/RAL
+Created: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/SIM
+----------------------------------------------------------------------------
+Generated: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/TOP/top.sv
+
+Refer to README.txt for a detailed summary of top.sv file:
+   → /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/SIM/README.txt
+----------------------------------------------------------------------------
+Generated: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/TEST_LIB/mc_base_test.sv
+
+Refer to README.txt for a detailed summary of top.sv file:
+   → /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/SIM/README.txt
+----------------------------------------------------------------------------
+Generated : /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/mc_env.sv
+
+Refer to README.txt for a detailed summary of top.sv file:
+   → /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/SIM/README.txt
+----------------------------------------------------------------------------
+Created agent class: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/AGENTS/wb/wb_agent.sv
+Created component: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/AGENTS/wb/wb_mon.sv
+Created component: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/AGENTS/wb/wb_cov.sv
+Created component: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/AGENTS/wb/wb_drv.sv
+Created component: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/AGENTS/wb/wb_sqr.sv
+Created agent class: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/AGENTS/mc_mem/mc_mem_agent.sv
+Created component: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/AGENTS/mc_mem/mc_mem_mon.sv
+Created component: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/ENV/AGENTS/mc_mem/mc_mem_cov.sv
+
+Refer to README.txt for a detailed summary of agents and its components file:
+   → /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/SIM/README.txt
+----------------------------------------------------------------------------
+Generated base sequence: /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/SEQ_LIB/mc_base_seq.sv
+
+Refer to README.txt for a detailed summary of agents and its components file:
+   → /home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/UVM_TB_GENERATOR/verif/SIM/README.txt
+----------------------------------------------------------------------------

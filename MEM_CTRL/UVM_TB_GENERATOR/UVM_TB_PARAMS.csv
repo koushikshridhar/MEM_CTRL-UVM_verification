@@ -1,0 +1,4 @@
+DUT_NAME,MC,,,
+NUM_INTF,4,,,
+INTF,WB,M,200,clk_i
+INTF,MC_MEM,S,100,mc_clk_i

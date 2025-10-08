@@ -1,0 +1,117 @@
+Magic 271485
+Revision Verdi_T-2022.06-SP2-5
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1920 820 351 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/verif/SIM/mc_db.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 1362742.500000
+cursor 13900.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 12
+; marker line index
+markerPos 45
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/verif/SIM/mc_db.fsdb"
+addSignal -h 15 /top/mc_top_dut/wb_ack_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb_addr_i[31:0]
+addSignal -h 15 -holdScope wb_cyc_i
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb_data_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb_data_o[31:0]
+addSignal -h 15 -holdScope wb_err_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope wb_sel_i[3:0]
+addSignal -h 15 -holdScope wb_stb_i
+addSignal -h 15 -holdScope wb_we_i
+addGroup "G2"
+addSignal -h 15 /top/mc_top_dut/mc_ack_pad_i
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_addr_pad_o[23:0]
+addSignal -h 15 -holdScope mc_adsc_pad_o_
+addSignal -h 15 -holdScope mc_adv_pad_o_
+addSignal -h 15 -holdScope mc_bg_pad_o
+addSignal -h 15 -holdScope mc_br_pad_i
+addSignal -h 15 -holdScope mc_cas_pad_o_
+addSignal -h 15 -holdScope mc_cke_pad_o_
+addSignal -h 15 -holdScope mc_clk_i
+addSignal -h 15 -holdScope mc_coe_pad_coe_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_cs_pad_o_[7:0]
+addSignal -expanded -h 15 -UNSIGNED -HEX -holdScope mc_data_pad_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_data_pad_o[31:0]
+addSignal -h 15 -holdScope mc_doe_pad_doe_o
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_dp_pad_i[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_dp_pad_o[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope mc_dqm_pad_o[3:0]
+addSignal -h 15 -holdScope mc_oe_pad_o_
+addSignal -h 15 -holdScope mc_ras_pad_o_
+addSignal -h 15 -holdScope mc_rp_pad_o_
+addSignal -h 15 -holdScope mc_sts_pad_i
+addSignal -h 15 -holdScope mc_vpen_pad_o
+addSignal -h 15 -holdScope mc_we_pad_o_
+addSignal -h 15 -holdScope mc_zz_pad_o
+addGroup "G3"
+addSignal -h 15 -UNSIGNED -HEX /top/flash_mem_bw8_inst/Address[12:0]
+addSignal -h 15 -holdScope CE1n
+addSignal -h 15 -holdScope CE2
+addSignal -h 15 -holdScope OEn
+addSignal -h 15 -holdScope WEn
+addSignal -h 15 -UNSIGNED -HEX -holdScope dataIO[7:0]
+addGroup "G4"
+addSignal -h 15 /top/flash_mem_bw8_inst/mem_array[8191:0]
+addGroup "G5"
+addSignal -h 15 -UNSIGNED -HEX /top/mc_top_dut/u1/acs_addr[23:0]
+addGroup "G6"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/koushiks/Desktop/KOUSHIK_PERSONAL/PROJECTS_UVM/MEM_CTRL/verif/SIM/mc_db.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/top"
+"/top/flash_mem_bw8_inst"
+"/top/mc_top_dut"
+
+SCOPE_LIST_BEGIN
+"/top"
+"/top/flash_mem_bw8_inst"
+"/top/mc_mem_pif"
+"/top/mc_top_dut"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
